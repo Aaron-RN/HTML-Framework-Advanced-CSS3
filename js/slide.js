@@ -1,4 +1,11 @@
 var bodyElement = getComputedStyle(document.body);
+var allElements = document.querySelectorAll("*");
+var bgSize = document.querySelector(".bg-responsive-size");
+var debugButton = document.querySelector(".debug-toggle");
+debugButton.addEventListener("click", function() {DebugToggle()});
+var gridButton = document.querySelector("#gridButton");
+gridButton.addEventListener("click", function() {GridToggle()});
+
 var slideBG = document.querySelector("#slideBG");
 var slideTitles = new Array();
 slideTitles = document.querySelectorAll(".slideTitle");
@@ -10,9 +17,32 @@ slideButtons = document.querySelectorAll(".slideButtons");
 var timerSwitch = bodyElement.getPropertyValue('--slideTimer')*1000;
 var loop = setInterval(function(){ChangeSlide();}, timerSwitch);
 
+function RemoveClass(elem,classToRemove)
+{
+    elem.classList.remove(classToRemove);
+}
+function DebugToggle()
+{
+    bgSize.classList.toggle("hide");
+    for(var i = 0;i < allElements.length; i++)
+        { 
+            allElements[i].classList.toggle("debug");
+        }
+}
+function GridToggle()
+{
+    var gridExamplesSection = document.querySelector("#grid-Examples");
+    gridExamplesSection.classList.toggle("hide");
+    gridExamplesSection.classList.toggle("animate-slideUp");
+}
 var slideNum = 1;
 function ChangeSlide()
 {
+    slideBG.classList.toggle("animate-slideLeft");
+    //var timer = setInterval(function(){RemoveClass(slideBG,"animate-slideLeft");}, 1000);
+    setTimeout(function() {
+        RemoveClass(slideBG,"animate-slideLeft")
+    }, (1 * 1000));
     if(slideNum==1)
         {
             slideBG.classList.remove("bg-slide-1");
