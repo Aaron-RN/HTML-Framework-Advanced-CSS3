@@ -1,56 +1,55 @@
-:root{
-    --slideTimer:5;/*Determines the amount of time it takes in seconds for the slider to change*/
-    --slideTitle-1:Honor Hispanic Heritage Month;
-    --slideTitle-2:Up to $300 off;
-    --slideDesc-1:From September 15-October 15, join us as we celebrate Latinx culture and community with inspirational stories from Latinx employees, in-store events, and more;
-    --slideDesc-2:Save on select ultra-light and versatile Surface Pro 6;
+:root {
+  --slideTimer: 5;/* Determines the amount of time it takes in seconds for the slider to change */
+  --slideTitle-1: Honor Hispanic Heritage Month;
+  --slideTitle-2: Up to $300 off;
+  --slideDesc-1: From September 15-october 15, join us as we celebrate Latinx culture and community with inspirational stories from Latinx employees, in-store events, and more;
+  --slideDesc-2: Save on select ultra-light and versatile Surface Pro 6;
 }
 
 
-a { text-decoration: none; color: black;padding: 2px;}
-nav a:hover span { border-bottom: 2px solid #000;}
+a { text-decoration: none; color: black; padding: 2px; }
+nav a:hover span { border-bottom: 2px solid #000; }
 
-body{font-family: 'Roboto', sans-serif;line-height: 1.2;}
+body { font-family: 'Roboto', sans-serif; line-height: 1.2; }
 
-/*NAVBAR ICONS*/
-.fa-search{transform: rotateY(180deg)}
-nav i{color: #555;}
+/* NAVBAR ICONS */
+.fa-search { transform: rotateY(180deg); }
+nav i { color: #555; }
 
-/*BUTTONS AND SLIDING ARROWS*/
-.button{font-size: 14px;font-weight: 500;background-color: #fff;padding: 12px 28px!important;border-style: solid;display: inline-block;cursor: pointer;}
-.button:hover{background-color: #d5d5d5;}
-a:hover span{border-bottom: 2px solid;}
-.arrow-slide:hover i{transform: translateX(5px);}
+/* BUTTONS AND SLIDING ARROWS */
+.button { font-size: 14px; font-weight: 500; background-color: #fff; padding: 12px 28px !important; border-style: solid; display: inline-block; cursor: pointer; }
+.button:hover { background-color: #d5d5d5; }
+a:hover span { border-bottom: 2px solid; }
+.arrow-slide:hover i { transform: translateX(5px); }
 
-/*NAVBAR LOGO*/
-.logo{width: 108px;height: auto;}
+/* NAVBAR LOGO */
+.logo { width: 108px; height: auto; }
 
-/*SLIDER*/
-.bg-slide-1{background-image: url(../images/slide1.webp);}
-.bg-slide-2{background-image: url(../images/slide2.webp);}
+/* SLIDER */
+.bg-slide-1 { background-image: url(../images/slide1.webp); }
+.bg-slide-2 { background-image: url(../images/slide2.webp); }
 
-/*Footer*/
-.footer-link{font-weight: normal;font-size: 0.75em;color: #888;}
-footer a:hover{text-decoration: underline;}
-footer {color:#666;}
+/* Footer */
+.footer-link { font-weight: normal; font-size: 0.75em; color: #888; }
+footer a:hover { text-decoration: underline; }
+footer { color: #666; }
 
-/*Media queries*/
+/* Media queries */
+
 /* Small devices (portrait tablets and large phones, 720px and up) */
 @media screen and (max-width: 720px), (min-width: 720px) {
-    .bg-slide-1{background-image: url(../images/slide1-sm.webp);}
-    .bg-slide-2{background-image: url(../images/slide2-sm.webp);}
-
+  .bg-slide-1 { background-image: url(../images/slide1-sm.webp); }
+  .bg-slide-2 { background-image: url(../images/slide2-sm.webp); }
 }
 
 /* Medium devices (landscape tablets, 720px - 1024px) */
 @media only screen and (min-width: 721px) {
-    .bg-slide-1{background-image: url(../images/slide1.webp);}
-    .bg-slide-2{background-image: url(../images/slide2.webp);}
-
-} 
+  .bg-slide-1 { background-image: url(../images/slide1.webp); }
+  .bg-slide-2 { background-image: url(../images/slide2.webp); }
+}
 
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
-    .bg-slide-1{background-image: url(../images/slide1.webp);}
-    .bg-slide-2{background-image: url(../images/slide2.webp);}
+  .bg-slide-1 { background-image: url(../images/slide1.webp); }
+  .bg-slide-2 { background-image: url(../images/slide2.webp); }
 }
