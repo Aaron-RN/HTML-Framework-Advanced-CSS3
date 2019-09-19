@@ -74,14 +74,18 @@ nav [class*="col"] { margin-right: 0; }
 .col-12 { display: block; width: 100%; }
 
 .logo { width: 108px; height: auto; }
+
 .vert-mid,
- .vert-mid * { vertical-align: middle; align-self: center; }
+.vert-mid * { vertical-align: middle; align-self: center; }
+
 .vert-top,
- .vert-top * { vertical-align: top; align-self: flex-start; }
+.vert-top * { vertical-align: top; align-self: flex-start; }
+
 .vert-btm,
- .vert-btm * { vertical-align: bottom; align-self: flex-end; }
+.vert-btm * { vertical-align: bottom; align-self: flex-end; }
+
 .vert-stretch,
- .vert-stretch * { vertical-align: middle; align-self: stretch; height: 100%; }
+.vert-stretch * { vertical-align: middle; align-self: stretch; height: 100%; }
 .vert-middle { top: 50%; transform: translateY(-50%); position: relative; }
 
 .bg-none { background: transparent; }
@@ -351,7 +355,7 @@ footer { color: #666; }
   .p-15-child div { padding: 15px 5px; padding-left: 0; }
 
   .vert-mid-md,
- .vert-mid-md * { vertical-align: middle; align-self: center; }
+  .vert-mid-md * { vertical-align: middle; align-self: center; }
 
   .container { max-width: calc(1600px + 10%); padding-left: 0; padding-right: 0; }
 
@@ -417,7 +421,7 @@ footer { color: #666; }
   .m-r-0-md { margin-right: 0; }
 
   .vert-mid-md,
- .vert-mid-md * { vertical-align: middle; align-self: center; }
+  .vert-mid-md * { vertical-align: middle; align-self: center; }
 
   .container { max-width: calc(1600px + 10%); padding-left: 0; padding-right: 0; }
 
@@ -479,11 +483,13 @@ footer { color: #666; }
   .p-15-child div { padding: 15px; }
 
   .vert-mid,
- .vert-mid * { vertical-align: middle; align-self: center; }
+  .vert-mid * { vertical-align: middle; align-self: center; }
+
   .vert-top,
- .vert-top * { vertical-align: top; align-self: flex-start; }
+  .vert-top * { vertical-align: top; align-self: flex-start; }
+
   .vert-btm,
- .vert-btm * { vertical-align: bottom; align-self: flex-end; }
+  .vert-btm * { vertical-align: bottom; align-self: flex-end; }
 
   .container { max-width: calc(1600px + 10%); padding-left: 5%; padding-right: 5%; }
 
