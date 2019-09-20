@@ -22,31 +22,33 @@ html { box-sizing: border-box; }
   transition-duration: 0.25s;
 }
 .debug:hover { outline: 1px blue solid; }
-.bg-responsive-size::after { 
-    position: absolute; 
-    content: "Window Resolution Size: " "(" attr(width) ")"; 
-    width: 100%; 
-    margin: auto; 
-    text-align: center; 
-    font-size: 4vw; 
-    top: 14rem; 
-    color: #ddd; 
-    z-index: 10; 
-    opacity: 0.3; 
-    pointer-events: none; 
-    transform: rotateZ(15deg); 
+
+.bg-responsive-size::after {
+  position: absolute;
+  content: "Window Resolution Size: " "(" attr(width) ")";
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 4vw;
+  top: 14rem;
+  color: #ddd;
+  z-index: 10;
+  opacity: 0.3;
+  pointer-events: none;
+  transform: rotateZ(15deg);
 }
-.debug-toggle { 
-    position: fixed; 
-    top: 50px; 
-    right: 20px; 
-    border-radius: 5px; 
-    z-index: 999; 
-    background-color: lightsalmon; 
-    border-color: darkgoldenrod; 
-    font-weight: bold; 
-    cursor: pointer; 
-    opacity: 0.2; 
+
+.debug-toggle {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  border-radius: 5px;
+  z-index: 999;
+  background-color: lightsalmon;
+  border-color: darkgoldenrod;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.2;
 }
 .debug-toggle:hover { outline-color: greenyellow; transform: scale(1.2); opacity: 1; }
 
