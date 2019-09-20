@@ -79,6 +79,9 @@ module.exports = {
     "media-query-list-comma-space-before": "never",
     "no-eol-whitespace": true,
     "no-missing-end-of-source-newline": true,
+    "no-descending-specificity": [ "always", {
+      ignore: ["selectors-within-list"],
+    } ],
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "property-case": "lower",
