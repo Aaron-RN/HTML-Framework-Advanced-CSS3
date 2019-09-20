@@ -219,6 +219,9 @@ strong { font-weight: bold; }
 .text-dark { color: #555; }
 .text-red { color: #ff4d4d; }
 .text-blue { color: #0073e6; }
+.text-green { color: #11af11; }
+.text-yellow { color: #efa611; }
+.text-orange { color: #ff7711; }
 
 /* BACKGROUNDS */
 .bg-none { background: transparent; }
