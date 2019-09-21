@@ -368,7 +368,7 @@ strong { font-weight: bold; }
   [class*="col"]:last-of-type { margin-right: 0; }
 
   .p-x-2-md { padding-left: 2em; padding-right: 2em; }
-  .p-15-child div { padding: 15px 0px; }
+  .p-15-child div { padding: 15px 0; }
 
   .vert-mid-md,
   .vert-mid-md * { vertical-align: middle; align-self: center; }
