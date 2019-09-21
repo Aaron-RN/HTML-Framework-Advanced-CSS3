@@ -13,6 +13,9 @@ var slideDescriptions = new Array();
 slideDescriptions = document.querySelectorAll(".slideDesc");
 var slideButtons = new Array();
 slideButtons = document.querySelectorAll(".slideButtons");
+var slideElements = new Array();
+slideElements = document.querySelectorAll("#slideBG, .slideTitle, .slideDesc, .slideButtons");
+
 
 var timerSwitch = bodyElement.getPropertyValue('--slideTimer')*1000;
 var loop = setInterval(function(){ChangeSlide();}, timerSwitch);
@@ -38,10 +41,14 @@ function GridToggle()
 var slideNum = 1;
 function ChangeSlide()
 {
-    slideBG.classList.toggle("animate-slideLeft");
+    for(var n = 0; n<slideElements.length;n++){
+        slideElements[n].classList.toggle("animate-slideLeft");
+    }
     //var timer = setInterval(function(){RemoveClass(slideBG,"animate-slideLeft");}, 1000);
     setTimeout(function() {
-        RemoveClass(slideBG,"animate-slideLeft")
+        for(var n = 0; n<slideElements.length;n++){
+            RemoveClass(slideElements[n],"animate-slideLeft")
+        }
     }, (1 * 1000));
     if(slideNum==1)
         {
