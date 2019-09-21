@@ -20,9 +20,18 @@ slideElements = document.querySelectorAll("#slideBG, .slideTitle, .slideDesc, .s
 var timerSwitch = bodyElement.getPropertyValue('--slideTimer')*1000;
 var loop = setInterval(function(){ChangeSlide();}, timerSwitch);
 
+ColCreation();
+
 function RemoveClass(elem,classToRemove)
 {
     elem.classList.remove(classToRemove);
+}
+function ColCreation(){
+    for(var i = 0; i < allElements.length; i++){
+        if(allElements[i].classList.contains("col-2-m4-12")){
+            allElements[i].setAttribute('data-col', 'col-2-m4-12');
+        }
+    }
 }
 function DebugToggle()
 {
