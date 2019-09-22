@@ -18,9 +18,9 @@ Development Link: https://raw.githack.com/Aaron-RN/Advanced-CSS3/Development/ind
 Master Link: https://raw.githack.com/Aaron-RN/Advanced-CSS3/master/index.html
 
 # Images
-![](images/screenshot1.png)
-![](images/screenshot2.png)
-![](images/screenshot3.png)
+![Large Screens](images/screenshot1.png)
+![Medium Screens](images/screenshot2.png)
+![Small Screens](images/screenshot3.png)
 
 # Features
 A 12-column Grid based responsive system.
@@ -59,12 +59,12 @@ The .col-\*-md variant sets the column size for the element to the given value (
 #### .col-\*-sm
 The .col-\*-sm variant sets the column size for the element to the given value (ranging from 1-12) as the column size for small screens.
 
-**Example combining the 3 variants : <div class="col-2 col-3-md col-4-sm"></div>**
+**Example combining the 3 variants :** `<div class="col-2 col-3-md col-4-sm"></div>`
 
 ### .col-\*-m\*-\*
 The .col-\*-m\*-\* variant takes all three variables into one class-name as .col-lg-m(md)-sm. The first variable addresses the column size for large screens, the second variable addresses the column size for medium screens and the last variable addresses the column size for the small screens.
 
-__Example : <div class="col-2-3m-12"></div>__
+__Example :__ `<div class="col-2-3m-12"></div>`
 
 ### Animations
 Includes 5 pre-made animations: grow, grow:hover, slideUp, slideLeft, slideLeft:hover
