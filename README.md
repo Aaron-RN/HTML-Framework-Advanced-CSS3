@@ -24,283 +24,250 @@ Master Link: https://raw.githack.com/Aaron-RN/Advanced-CSS3/master/index.html
 
 # Features
 A 12-column Grid based responsive system.
-Breakpoints for Screen Sizes:
-Small = 720px width and below,
-Medium = 721px width to 1023px width
-Large = 1024px width and above
+
+Breakpoints for Screen Sizes:  
+- Small = 720px width and below,
+- Medium = 721px width to 1023px width
+- Large = 1024px width and above
 
 ## Simple Use
 
 **Three (3) Main classes: .container, .row and .col-\*-m\*-\***
 
+### .container
 The .container class sets the element at a specified max width with 5% paddings on the left and right sides. It also removes wrapping and hides overflown content.
 
+### .row
 The .row class which is placed as a child of a container returns wrapping, is a relative positioned element and takes up 100% of the view width space.
 
-There are two variations of the .row class: .row-flex and .row-flex-auto
+There are two variations of the .row class, .row-flex and .row-flex-auto
 
+#### .row-flex
 The .row-flex class turns the element into a flex-box that spans the entire width of its parent element
 
+#### .row-flex-auto
 The .row-flex-auto class turns the element into a flex-box that has an auto expanding width(width of element is relative to its children's width). 
 
+### .col-\*
 The .col-\*-m\*-\* class has a few variations to: .col-\*, .col-\*-md, .col-\*-sm.
 
 The .col-\* variant sets the column size for the element to one value for all screen sizes. The \* is replaced with one of the numbers from 1 - 12.
 
+#### .col-\*-md
 The .col-\*-md variant sets the column size for the element to the given value (ranging from 1-12) as the column size for medium screens.
 
+#### .col-\*-sm
 The .col-\*-sm variant sets the column size for the element to the given value (ranging from 1-12) as the column size for small screens.
 
-Example combining the 3 variants : <div class="col-2 col-3-md col-4-sm"></div>
+**Example combining the 3 variants : <div class="col-2 col-3-md col-4-sm"></div>**
 
+### .col-\*-m\*-\*
 The .col-\*-m\*-\* variant takes all three variables into one class-name as .col-lg-m(md)-sm. The first variable addresses the column size for large screens, the second variable addresses the column size for medium screens and the last variable addresses the column size for the small screens.
 
-Example : <div class="col-2-3m-12"></div>
+__Example : <div class="col-2-3m-12"></div>__
 
 ### Animations
 Includes 5 pre-made animations: grow, grow:hover, slideUp, slideLeft, slideLeft:hover
 
-animate-grow - selected element grows and shrinks in a pulsating fashion  
-animate-grow-hover - selected element grows on hover and shrinks when not hovered over  
-animate-slideUp - element slides up from bottom of screen  
-animate-slideLeft - element slides from the right to left  
-animate-slideLeft-hover - element slides from the righ to left on hover
+__animate-grow__ - selected element grows and shrinks in a pulsating fashion  
+__animate-grow-hover__ - selected element grows on hover and shrinks when not hovered over  
+__animate-slideUp__ - element slides up from bottom of screen  
+__animate-slideLeft__ - element slides from the right to left  
+__animate-slideLeft-hover__ - element slides from the righ to left on hover
 
 ### Display Features
 For screen size references refer to Features section above on section related to Breakpoints.
 
-.hide - element is hidden  
-.hide-sm - block element is hidden on small screens  
-.hide-sm-inline - inline-block element is hidden on small screens  
-.hide-sm-flex - flex-box element is hidden on small screens  
-.hide-md - block element is hidden on medium screens  
-.hide-md-inline - inline-block element is hidden on medium screens  
-.hide-md-flex - flex-box element is hidden on medium screens  
-.hide-lg - block element is hidden on large screens  
-.hide-lg-inline - inline-block element is hidden on large screens  
-.hide-lg-flex - flex-box element is hidden on large screens  
-.show-sm-only - element is hidden on both large and medium screens  
-.show-sm-only-inline - inline-block element is hidden on both large and medium screens  
-.show-sm-only-flex - flex-box element is hidden on both large and medium screens  
+__.hide__ - element is hidden  
+__.hide-sm__ - block element is hidden on small screens  
+__.hide-sm-inline__ - inline-block element is hidden on small screens  
+__.hide-sm-flex__ - flex-box element is hidden on small screens  
+__.hide-md__ - block element is hidden on medium screens  
+__.hide-md-inline__ - inline-block element is hidden on medium screens  
+__.hide-md-flex__ - flex-box element is hidden on medium screens  
+__.hide-lg__ - block element is hidden on large screens  
+__.hide-lg-inline____ - inline-block element is hidden on large screens  
+__.hide-lg-flex__ - flex-box element is hidden on large screens  
 
-.inline-block { display: inline-block; }  
-.row { display: block; width: 100%; white-space: normal; position: relative; }  
-.row-flex { display: flex; width: 100%; flex-wrap: wrap; }  
-.row-flex-auto { display: flex; width: auto; flex-wrap: wrap; }  
+__.show-sm-only__ - element is hidden on both large and medium screens  
+__.show-sm-only-inline__ - inline-block element is hidden on both large and medium screens  
+__.show-sm-only-flex__ - flex-box element is hidden on both large and medium screens  
+
+__.inline-block__ { display: inline-block; }  
 
 ### TEXT DECORATIONS and TRANSFORMS
-.underline { text-decoration: underline; }  
-.uppercase { text-transform: uppercase; }  
-.smallcaps { font-variant: small-caps; }  
-.text-strikeout { text-decoration: line-through; }  
-.bold { font-weight: 700; }  
-.bold-100 { font-weight: 100; }  
-.bold-200 { font-weight: 200; }  
-.bold-300 { font-weight: 300; }  
-.bold-400 { font-weight: 400; }  
-.bold-500 { font-weight: 500; }  
-.bold-600 { font-weight: 600; }  
-.bold-800 { font-weight: 800; }  
-.bold-900 { font-weight: 900; }  
-.italic { font-style: italic; }  
+
+__.underline__ { text-decoration: underline; }  
+__.uppercase__ { text-transform: uppercase; }  
+__.smallcaps__ { font-variant: small-caps; }  
+__.text-strikeout__ { text-decoration: line-through; }  
+__.bold__ { font-weight: 700; }  
+__.bold-100__ { font-weight: 100; }  
+__.bold-200__ { font-weight: 200; }  
+__.bold-300__ { font-weight: 300; }  
+__.bold-400__ { font-weight: 400; }  
+__.bold-500__ { font-weight: 500; }  
+__.bold-600__ { font-weight: 600; }  
+__.bold-800__ { font-weight: 800; }  
+__.bold-900__ { font-weight: 900; }  
+__.italic__ { font-style: italic; }  
 
 ### FONT SIZES
-.size-6 { font-size: 0.375em; }  
-.size-8 { font-size: 0.5em; }  
-.size-10 { font-size: 0.625em; }  
-.size-12 { font-size: 0.75em; }  
-.size-13 { font-size: 0.8125em; }  
-.size-14 { font-size: 0.875em; }  
-.size-15 { font-size: 0.9em; }  
-.size-16 { font-size: 1em; }  
-.size-18 { font-size: 1.125em; }  
-.size-20 { font-size: 1.25em; }  
-.size-22 { font-size: 1.375em; }  
-.size-24 { font-size: 1.5em; }  
-.size-26 { font-size: 1.625em; }  
-.size-28 { font-size: 1.75em; }  
-.size-30 { font-size: 1.875em; }  
-.size-32 { font-size: 2em; }  
-.size-34 { font-size: 2.125em; }  
-.size-36 { font-size: 2.25em; }  
-.size-38 { font-size: 2.375em; }  
-.size-40 { font-size: 2.5em; }  
-.size-46 { font-size: 2.875em; }  
-.size-50 { font-size: 3.125em; }  
+
+__.size-6__ { font-size: 0.375em; }  
+__.size-8__ { font-size: 0.5em; }  
+__.size-10__ { font-size: 0.625em; }  
+__.size-12__ { font-size: 0.75em; }  
+__.size-13__ { font-size: 0.8125em; }  
+__.size-14__ { font-size: 0.875em; }  
+__.size-15__ { font-size: 0.9em; }  
+__.size-16__ { font-size: 1em; }  
+__.size-18__ { font-size: 1.125em; }  
+__.size-20__ { font-size: 1.25em; }  
+__.size-22__ { font-size: 1.375em; }  
+__.size-24__ { font-size: 1.5em; }  
+__.size-26__ { font-size: 1.625em; }  
+__.size-28__ { font-size: 1.75em; }  
+__.size-30__ { font-size: 1.875em; }  
+__.size-32__ { font-size: 2em; }  
+__.size-34__{ font-size: 2.125em; }  
+__.size-36__ { font-size: 2.25em; }  
+__.size-38__ { font-size: 2.375em; }  
+__.size-40__ { font-size: 2.5em; }  
+__.size-46__ { font-size: 2.875em; }  
+__.size-50__ { font-size: 3.125em; }  
 
 ### LINE HEIGHTS
-.lineH-1-2 { line-height: 1.2; }  
-.lineH-1-3 { line-height: 1.3; }  
-.lineH-1-4 { line-height: 1.4; }  
-.lineH-20 { line-height: 20px; }  
-.lineH-30 { line-height: 30px; }  
-.lineH-70 { line-height: 70px; }  
+
+__.lineH-1-2__ { line-height: 1.2; }  
+__.lineH-1-3__ { line-height: 1.3; }  
+__.lineH-1-4__ { line-height: 1.4; }  
+__.lineH-20__ { line-height: 20px; }  
+__.lineH-30__ { line-height: 30px; }  
+__.lineH-70__ { line-height: 70px; }  
 
 ### Text Colors
-.text-black { color: #000; }  
-.text-white { color: #fff; }  
-.text-mute { color: #aaa; }  
-.text-gray { color: #6f6f6f; }  
-.text-dark { color: #555; }  
-.text-red { color: #ff4d4d; }  
-.text-blue { color: #0073e6; }  
-.text-green { color: #11af11; }  
-.text-yellow { color: #efa611; }  
-.text-orange { color: #f71; }  
+
+__.text-black__ { color: #000; }  
+__.text-white__ { color: #fff; }  
+__.text-mute__ { color: #aaa; }  
+__.text-gray__ { color: #6f6f6f; }  
+__.text-dark__ { color: #555; }  
+__.text-red__ { color: #ff4d4d; }  
+__.text-blue__ { color: #0073e6; }  
+__.text-green__ { color: #11af11; }  
+__.text-yellow__ { color: #efa611; }  
+__.text-orange__ { color: #f71; }  
 
 ### BACKGROUNDS
-.bg-none { background: transparent; }  
-.bg-white { background-color: #fff; }  
-.bg-black { background-color: #000; }  
-.bg-gray { background-color: #aaa; }  
-.bg-darkgray { background-color: #333; }  
-.bg-red { background-color: #a11; }  
-.bg-lightgray { background-color: #f2f2f2; }  
-.bg-jumbo - non-repeating background image, that covers the entire element width and height while centered which resizes depending on the view width of the browser.
+
+__.bg-none__ { background: transparent; }  
+__.bg-white__ { background-color: #fff; }  
+__.bg-black__ { background-color: #000; }  
+__.bg-gray__ { background-color: #aaa; }  
+__.bg-darkgray__ { background-color: #333; }  
+__.bg-red__ { background-color: #a11; }  
+__.bg-lightgray__ { background-color: #f2f2f2; }  
+__.bg-jumbo__ - non-repeating background image, that covers the entire element width and height while centered which resizes depending on the view width of the browser.
 
 ### WIDTH AND HEIGHT
-.width-max { width: 100%; }  
-.height-30 { min-height: 30px; }  
-.height-50 { min-height: 50px; }  
-.height-100 { min-height: 100px; }  
-.height-250 { min-height: 250px; }  
-.height-300 { min-height: 300px; }  
-.height-500 { min-height: 500px; }  
-.height-max { height: 100%; }  
+
+__.width-max__ { width: 100%; }  
+__.height-30__ { min-height: 30px; }  
+__.height-50__ { min-height: 50px; }  
+__.height-100__ { min-height: 100px; }  
+__.height-250__ { min-height: 250px; }  
+__.height-300__ { min-height: 300px; }  
+__.height-500__ { min-height: 500px; }  
+__.height-max__ { height: 100%; }  
 
 ### BORDERS
-.border { border: 1px gray solid; }  
-.border-2 { border: 2px gray solid; }  
-.border-3 { border: 3px gray solid; }  
-.border-r-0 { border-right: none; }  
-.border-l-0 { border-left: none; }  
-.border-t-0 { border-top: none; }  
-.border-b-0 { border-bottom: none; }  
-.border-circle { border-radius: 50%; }  
-.border-rad-10 { border-radius: 10px; }  
-.border-white { border-color: #fff; }  
-.border-black { border-color: #000; }  
-.border-red { border-color: #c00; }  
+
+__.border__ { border: 1px gray solid; }  
+__.border-2__ { border: 2px gray solid; }  
+__.border-3__ { border: 3px gray solid; }  
+__.border-r-0__ { border-right: none; }  
+__.border-l-0__ { border-left: none; }  
+__.border-t-0__ { border-top: none; }  
+__.border-b-0__ { border-bottom: none; }  
+__.border-circle__ { border-radius: 50%; }  
+__.border-rad-10__ { border-radius: 10px; }  
+__.border-white__ { border-color: #fff; }  
+__.border-black__ { border-color: #000; }  
+__.border-red__ { border-color: #c00; }  
 
 ### MARGINS
-.m-t-1 { margin-top: 1em; }  
-.m-t-2 { margin-top: 2em; }  
-.m-t-3 { margin-top: 3em; }  
-.m-t-4 { margin-top: 4em; }  
-.m-t-10 { margin-top: 10px; }  
-.m-t-15 { margin-top: 15px; }  
-.m-t-20 { margin-top: 20px; }  
 
-.m-b-1 { margin-bottom: 1em; }  
-.m-b-2 { margin-bottom: 2em; }  
-.m-b-3 { margin-bottom: 3em; }  
-.m-b-10 { margin-bottom: 10px; }  
+__.m-t-1__ { margin-top: 1em; }  
+__.m-t-2__ { margin-top: 2em; }  
+__.m-t-3__ { margin-top: 3em; }  
+__.m-t-4__ { margin-top: 4em; }  
+__.m-t-10__ { margin-top: 10px; }  
+__.m-t-15__ { margin-top: 15px; }  
+__.m-t-20__ { margin-top: 20px; }  
 
-.m-l-1 { margin-left: 1em; }  
-.m-l-2 { margin-left: 2em; }  
-.m-l-3 { margin-left: 3em; }  
-.m-l-20 { margin-left: 20px; }  
+__.m-b-1__ { margin-bottom: 1em; }  
+__.m-b-2__ { margin-bottom: 2em; }  
+__.m-b-3__ { margin-bottom: 3em; }  
+__.m-b-10__ { margin-bottom: 10px; }  
 
-.m-r-1 { margin-right: 1em; }  
-.m-r-2 { margin-right: 2em; }  
-.m-r-3 { margin-right: 3em; }  
+__.m-l-1__ { margin-left: 1em; }  
+__.m-l-2__ { margin-left: 2em; }  
+__.m-l-3__ { margin-left: 3em; }  
+__.m-l-20__ { margin-left: 20px; }  
 
-.margin-l-auto { margin-left: auto; }  
-.margin-r-auto { margin-right: auto; }
+__.m-r-1__ { margin-right: 1em; }  
+__.m-r-2__ { margin-right: 2em; }  
+__.m-r-3__ { margin-right: 3em; }  
+
+__.margin-l-auto__ { margin-left: auto; }  
+__.margin-r-auto__ { margin-right: auto; }
 
 ### PADDINGS
-.p-0 { padding: 0 !important; }  
-.p-5 { padding: 5px; }  
-.p-10 { padding: 10px; }  
-.p-15 { padding: 15px; }  
-.p-20 { padding: 20px; }  
-.p-5-child div { padding: 5px; }  
-.p-5-child-md div { padding: 5px; }  
-.p-10-child div { padding: 10px; }  
-.p-15-child div { padding: 15px; }  
 
-.p-l-1 { padding-left: 1em; }  
-.p-l-2 { padding-left: 2em; }  
-.p-l-3 { padding-left: 3em; }  
-.p-l-5 { padding-left: 5px !important; }  
+__.p-0__ { padding: 0 !important; }  
+__.p-5__ { padding: 5px; }  
+__.p-10__ { padding: 10px; }  
+__.p-15__ { padding: 15px; }  
+__.p-20__ { padding: 20px; }  
+__.p-5-child div__ { padding: 5px; }  
+__.p-5-child-md div__ { padding: 5px; }  
+__.p-10-child div__ { padding: 10px; }  
+__.p-15-child div__ { padding: 15px; }  
 
-.p-r-1 { padding-right: 1em; }  
-.p-r-2 { padding-right: 2em; }  
-.p-r-3 { padding-right: 3em; }  
+__.p-l-1__ { padding-left: 1em; }  
+__.p-l-2__ { padding-left: 2em; }  
+__.p-l-3__ { padding-left: 3em; }  
+__.p-l-5__ { padding-left: 5px !important; }  
 
-.p-t-1 { padding-top: 1em; }  
-.p-t-2 { padding-top: 2em; }  
-.p-t-3 { padding-top: 3em; }  
-.p-t-10 { padding-top: 10px; }  
-.p-t-15 { padding-top: 15px; }  
-.p-t-20 { padding-top: 20px; }  
+__.p-r-1__ { padding-right: 1em; }  
+__.p-r-2__ { padding-right: 2em; }  
+__.p-r-3__ { padding-right: 3em; }  
 
-.p-b-1 { padding-bottom: 3em; }  
-.p-b-2 { padding-bottom: 3em; }  
-.p-b-3 { padding-bottom: 3em; }  
-.p-b-3px { padding-bottom: 3px !important; }  
-.p-b-10 { padding-bottom: 10px; }  
-.p-b-15 { padding-bottom: 15px; }  
-.p-b-20 { padding-bottom: 20px; }  
+__.p-t-1__ { padding-top: 1em; }  
+__.p-t-2__ { padding-top: 2em; }  
+__.p-t-3__ { padding-top: 3em; }  
+__.p-t-10__ { padding-top: 10px; }  
+__.p-t-15__ { padding-top: 15px; }  
+__.p-t-20__ { padding-top: 20px; }  
+
+__.p-b-1__ { padding-bottom: 3em; }  
+__.p-b-2__ { padding-bottom: 3em; }  
+__.p-b-3__ { padding-bottom: 3em; }  
+__.p-b-3px__ { padding-bottom: 3px !important; }  
+__.p-b-10__ { padding-bottom: 10px; }  
+__.p-b-15__ { padding-bottom: 15px; }  
+__.p-b-20__ { padding-bottom: 20px; }  
 
 ### POSITIONINGS
-.pos-relative { position: relative; }  
-.pos-absolute { position: absolute; }  
-.container { max-width: calc(1600px + 10%); padding-left: 5%; padding-right: 5%; overflow: hidden; white-space: nowrap; }  
-.width-auto { width: auto; }  
-.center { margin: auto; }  
-.center-text { text-align: center; }  
-.vert-mid, .vert-mid * { vertical-align: middle; align-self: center; }  
-.vert-top, .vert-top * { vertical-align: top; align-self: flex-start; }  
-.vert-btm, .vert-btm * { vertical-align: bottom; align-self: flex-end; }  
-.vert-stretch, .vert-stretch * { vertical-align: middle; align-self: stretch; height: 100%; }  
-.vert-middle { top: 50%; transform: translateY(-50%); }
 
-### LINE HEIGHTS
-.lineH-1-2 { line-height: 1.2; }  
-.lineH-1-3 { line-height: 1.3; }  
-.lineH-1-4 { line-height: 1.4; }  
-.lineH-20 { line-height: 20px; }  
-.lineH-30 { line-height: 30px; }  
-.lineH-70 { line-height: 70px; }  
-
-### FONT SIZES
-.size-6 { font-size: 0.375em; }  
-.size-8 { font-size: 0.5em; }  
-.size-10 { font-size: 0.625em; }  
-.size-12 { font-size: 0.75em; }  
-.size-13 { font-size: 0.8125em; }  
-.size-14 { font-size: 0.875em; }  
-.size-15 { font-size: 0.9em; }  
-.size-16 { font-size: 1em; }  
-.size-18 { font-size: 1.125em; }  
-.size-20 { font-size: 1.25em; }  
-.size-22 { font-size: 1.375em; }  
-.size-24 { font-size: 1.5em; }  
-.size-26 { font-size: 1.625em; }  
-.size-28 { font-size: 1.75em; }  
-.size-30 { font-size: 1.875em; }  
-.size-32 { font-size: 2em; }  
-.size-34 { font-size: 2.125em; }  
-.size-36 { font-size: 2.25em; }  
-.size-38 { font-size: 2.375em; }  
-.size-40 { font-size: 2.5em; }  
-.size-46 { font-size: 2.875em; }  
-.size-50 { font-size: 3.125em; }
-
-### TEXT DECORATIONS and TRANSFORMS
-strong { font-weight: bold; }  
-.underline { text-decoration: underline; }  
-.uppercase { text-transform: uppercase; }  
-.smallcaps { font-variant: small-caps; }  
-.text-strikeout { text-decoration: line-through; }  
-.bold { font-weight: 700; }  
-.bold-100 { font-weight: 100; }  
-.bold-200 { font-weight: 200; }  
-.bold-300 { font-weight: 300; }  
-.bold-400 { font-weight: 400; }  
-.bold-500 { font-weight: 500; }  
-.bold-600 { font-weight: 600; }  
-.bold-800 { font-weight: 800; }  
-.bold-900 { font-weight: 900; }  
-.italic { font-style: italic; }
+__.pos-relative__ { position: relative; }  
+__.pos-absolute__ { position: absolute; }  
+__.width-auto__ { width: auto; }  
+__.center__ { margin: auto; }  
+__.center-text__ { text-align: center; }  
+__.vert-mid, .vert-mid \*__ { vertical-align: middle; align-self: center; }  
+__.vert-top, .vert-top \*__ { vertical-align: top; align-self: flex-start; }  
+__.vert-btm, .vert-btm \*__ { vertical-align: bottom; align-self: flex-end; }  
+__.vert-stretch, .vert-stretch \*__ { vertical-align: middle; align-self: stretch; height: 100%; }  
+__.vert-middle__ { top: 50%; transform: translateY(-50%); }
