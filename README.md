@@ -38,7 +38,7 @@ Breakpoints for Screen Sizes:
 The .container class sets the element at a specified max width with 5% paddings on the left and right sides. It also removes wrapping and hides overflown content.
 
 ### .row
-The .row class which is placed as a child of a container returns wrapping, is a relative positioned element and takes up 100% of the view width space.
+The .row class which can be placed as a child of a container, returns the wrapping of contents and is a relative positioned element and takes up 100% of the view width space.
 
 There are two variations of the .row class, .row-flex and .row-flex-auto
 
