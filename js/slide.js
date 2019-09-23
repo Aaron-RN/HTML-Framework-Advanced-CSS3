@@ -16,20 +16,54 @@ slideButtons = document.querySelectorAll(".slideButtons");
 var slideElements = new Array();
 slideElements = document.querySelectorAll("#slideBG, .slideTitle, .slideDesc, .slideButtons");
 
+var allColClasses = new Array();
 
 var timerSwitch = bodyElement.getPropertyValue('--slideTimer')*1000;
 var loop = setInterval(function(){ChangeSlide();}, timerSwitch);
 
+PopulateColClasses();
 ColCreation();
 
 function RemoveClass(elem,classToRemove)
 {
     elem.classList.remove(classToRemove);
 }
+
+//Populates allColClasses array with all possible combinations of the col-*-m*-* class
+function PopulateColClasses(){
+    var str = "";
+    var substr1 = "col-";
+    var substr2 = 1;
+    var substr3 = "-m";
+    var substr4 = 1;
+    var substr5 = "-";
+    var substr6 = 1;
+    var counter = 0;
+    for(var i = 1; i <= 12; i++){
+        for(var o = 1; o <= 12; o++){
+            substr4 = o;
+            str = substr1 + substr2.toString() + substr3 + substr4.toString() + substr5 + substr6.toString();
+            if(!allColClasses.includes(str)) allColClasses.push(str);
+            for(var u = 1; u <= 12; u++){
+                substr6 = u;
+                str = substr1 + substr2.toString() + substr3 + substr4.toString() + substr5 + substr6.toString();
+                if(!allColClasses.includes(str)) allColClasses.push(str);
+            }
+        }
+        substr2 = i;
+        str = substr1 + substr2.toString() + substr3 + substr4.toString() + substr5 + substr6.toString();
+        if(!allColClasses.includes(str)) allColClasses.push(str);
+    }
+}
+
+//Grabs all elements that contain the col-*-m*-* class and adds the value to the element's data-col attribute
 function ColCreation(){
     for(var i = 0; i < allElements.length; i++){
-        if(allElements[i].classList.contains("col-2-m4-12")){
-            allElements[i].setAttribute('data-col', 'col-2-m4-12');
+        var colStart = allElements[i].className.indexOf("col-");
+        var colEnd = allElements[i].className.indexOf(" ", colStart);
+        var str = allElements[i].className.slice(colStart, colEnd);
+        if(allColClasses.includes(str)){
+            allElements[i].setAttribute('data-col', str);
         }
     }
 }
