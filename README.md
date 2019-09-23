@@ -66,6 +66,53 @@ The .col-\*-m\*-\* variant takes all three variables into one class-name as .col
 
 __Example :__ `<div class="col-2-3m-12"></div>`
 
+### Built-in Slider
+At the moment the framework only allows for one working slider per page. The variables for the slider are changed and accessed by creating these custom CSS variables in your own custom CSS file: 
+
+`
+  :root {  `<br>`
+    --slideTimer: 5;  `<br>`
+    --slideTitle-1: Honor Hispanic Heritage Month; `<br>` 
+    --slideTitle-2: Up to $300 off;  `<br>`
+    --slideDesc-1: From September 15 - October 15, join us as we celebrate Latinx culture and community with inspirational stories from       Latinx employees, in-store events, and more;  `<br>`
+    --slideDesc-2: Save on select ultra-light and versatile Surface Pro 6;  `<br>`
+  }
+`
+Of course the values given in these CSS variables are just for example purposes.
+
+#### --slideTimer
+This variable controls the amount of time in seconds it takes each slider image to rotate.
+
+#### --slideTitle-1
+This variable contains text which is shown as the title of the first slide.
+
+#### --slideTitle-2
+This variable contains text which is shown as the title of the second slide.
+
+#### --slideDesc-1
+This variable contains text which is shown as the description of the first slide.
+
+#### --slideDesc-2
+This variable contains text which is shown as the description of the second slide.
+
+**Example slider code in HTML :**
+
+`<div id="slideBG" class="col-12 bg-jumbo bg-slide-1">`<br>
+ `<div class="container">  `<br>
+ `<div class="col-6">  `<br>
+ `<h class="slideTitle">Honor Hispanic Heritage Month</h>  `<br>
+ `<p class="slideDesc">From September 15-October 15, join us as we celebrate Latinx culture and community with inspirational stories       from Latinx employees, in-store events, and more</p>  `<br>
+ `<div class="slideButtons row m-t-15">  `<br>
+ `<a href="#" class="col button">LEARN MORE</a>  `<br>
+ `</div>  `<br>
+ `</div>  `<br>
+ `</div>  `<br>
+ `</div>`
+
+
+#### .slideButtons
+This class contains any html coding related to the buttons available in each slide. However, for now, in-order to change the information in this class the ChangeSlide() function found within the slide.js file must be edited.
+
 ### Animations
 Includes 5 pre-made animations: grow, grow:hover, slideUp, slideLeft, slideLeft:hover
 
