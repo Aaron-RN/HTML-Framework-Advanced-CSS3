@@ -7,8 +7,7 @@ I recreated the Microsoft.com website using a custom built framework.
 ![Medium Screens](images/screenshot2.png)
 ![Small Screens](images/screenshot3.png)
 
-## [Live Link](https://raw.githack.com/Aaron-RN/Advanced-CSS3/master/index.html
-)
+## [Live Link](https://raw.githack.com/Aaron-RN/Advanced-CSS3/master/index.html)
 
 ## Built With
 
