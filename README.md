@@ -1,26 +1,18 @@
 # Advanced-CSS3
 In this final project, you’ll get to take everything you’ve learned and use it to build your own simple 12 column grid-based framework.
 
-# (- PROJECT: Advanced-CSS3 - )
 I recreated the Microsoft.com website using a custom built framework.
 
-## Authors: 
-### Aaron
-Aaron's Github Profile: https://github.com/Aaron-RN
-
-
-## Github Link
-Github Link: https://github.com/Aaron-RN/Advacned-CSS3
-
-## Live Link
-Development Link: https://raw.githack.com/Aaron-RN/Advanced-CSS3/Development/index.html
-
-Master Link: https://raw.githack.com/Aaron-RN/Advanced-CSS3/master/index.html
-
-# Images
 ![Large Screens](images/screenshot1.png)
 ![Medium Screens](images/screenshot2.png)
 ![Small Screens](images/screenshot3.png)
+
+## [Live Link](https://raw.githack.com/Aaron-RN/Advanced-CSS3/master/index.html
+)
+
+## Built With
+
+- HTML5, CSS
 
 # Features
 A 12-column Grid based responsive system.
@@ -318,3 +310,27 @@ __.vert-top, .vert-top \*__ { vertical-align: top; align-self: flex-start; }
 __.vert-btm, .vert-btm \*__ { vertical-align: bottom; align-self: flex-end; }  
 __.vert-stretch, .vert-stretch \*__ { vertical-align: middle; align-self: stretch; height: 100%; }  
 __.vert-middle__ { top: 50%; transform: translateY(-50%); }
+
+## Author
+
+👤 **Aaron Rory**
+
+- Github: [@Aaron-RN](https://github.com/Aaron-RN)
+- Twitter: [@ARNewbold](https://twitter.com/ARNewbold)
+- Linkedin: [Aaron Newbold](https://www.linkedin.com/in/aaron-newbold-1b9233187/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
+
+
