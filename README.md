@@ -12,6 +12,7 @@ I recreated the [Microsoft.com](https://www.microsoft.com/en-us/) website using 
 ## Built With
 
 - HTML5, CSS
+- JavaScript
 
 # Features
 A 12-column Grid based responsive system.
