@@ -12,6 +12,7 @@
         <link rel = "icon" type = "image/png" href = "images/ms_logo_icon.png">
     </head>
     <body class="bg-responsive center">
+        <div id="navOverlay" class="hide"></div>
         <div class="bg-responsive-size hide"></div>
         <header>
             <h1 class="hide">Microsoft.com website built using custom Framework</h1>
@@ -19,9 +20,9 @@
                 <h2 class="hide">Navigation Menu</h2>
                 <div class="container center">
                     <div class="row">
-                        <div class="row-flex p-5 size-13 vert-btm vert-mid-md">
+                        <div class="row-flex p-5 size-13 vert-btm vert-mid-md pos-relative">
                             <div class="row-flex-auto show-sm-only-flex">
-                                <div id="mobileNav" class="col px-1"><a href="#"><i class="fas fa-bars size-22"></i></a></div>
+                                <div id="mobileNav" class="col px-1"><a href="#"><i class="fas fa-bars size-26"></i></a></div>
                                 <div class="col px-1"><a href="#"><i class="fas fa-search size-22"></i></a></div>
                             </div>
                             <div class="row-flex-auto hide-sm-flex p-10-child p-5-child-md">
@@ -40,6 +41,21 @@
                                 <div class="col px-2-md"><a href="#"><span class="hide-md-inline">Cart</span> <i class="fas fa-shopping-cart size-22 p-l-5"></i></a></div>
                                 <div class="col hide-md px-2-md"><a href="#"><span>Sign in</span></a></div>
                                 <div class="col p-0 p-b-3px"><a href="#"><i class="fas fa-user size-22 p-5 border border-circle"></i></a></div>
+                            </div>
+                            <div id="navDropDownMenu" class="hide">
+                              <a href="#">Office</a>
+                              <a href="#">Windows</a>
+                              <a href="#">Surface</a>
+                              <a href="#">Xbox</a>
+                              <a href="#">Deals</a>
+                              <a href="#">Support</a>
+                              <a href="#">Software</a>
+                              <a href="#">PCs &amp; Devices</a>
+                              <a href="#">Entertainment</a>
+                              <a href="#">Business</a>
+                              <a href="#">Developer &amp; IT</a>
+                              <a href="#">Other</a>
+                              <a href="#">View Sitemap</a>
                             </div>
                         </div>
                     </div>
@@ -313,6 +329,7 @@
             </section>
             <!--JavaScript Code-->
             <script src="js/slide.js"></script>
+            <script src="js/navMenu.js"></script>
         </footer>
     </body>
 </html>

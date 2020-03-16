@@ -76,6 +76,37 @@ h6 { font-size: 1.5em; font-weight: bold; margin-bottom: 10px; margin-top: 10px;
 }
 nav [class*="col"] { margin-right: 0; }
 
+#navOverlay{
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+#navDropDownMenu{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 48px;
+  background-color: #EFEFEF;
+  z-index: 99;
+  font-size: 16px;
+  border-bottom: 1px solid #666;
+}
+
+#navDropDownMenu a{
+  display: block;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 16px;
+}
+
+#navDropDownMenu a:focus{
+  border: 1.2px dotted #CCC;
+}
+
 .col { flex-grow: 1; }
 .col-12 { display: block; width: 100%; }
 
@@ -131,7 +162,7 @@ strong { font-weight: bold; }
 /* POSITIONINGS */
 .pos-relative { position: relative; }
 .pos-absolute { position: absolute; }
-.container { max-width: calc(1600px + 10%); padding-left: 5%; padding-right: 5%; overflow: hidden; white-space: nowrap; }
+.container { max-width: calc(1600px + 10%); padding-left: 5%; padding-right: 5%; white-space: nowrap; }
 .width-auto { width: auto; }
 
 .center { margin: auto; }
@@ -507,6 +538,7 @@ strong { font-weight: bold; }
 
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
+  #navDropDownMenu{ display: none; }
   .bg-responsive-size::after { content: "Window Resolution Size: (1024px and up)"; }
 
   .hide-sm { display: block; }
