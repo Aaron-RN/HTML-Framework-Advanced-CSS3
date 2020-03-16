@@ -1,25 +1,21 @@
-var bodyElement = getComputedStyle(document.body);
-var allElements = document.querySelectorAll("*");
-var bgSize = document.querySelector(".bg-responsive-size");
-var debugButton = document.querySelector(".debug-toggle");
+let bodyElement = getComputedStyle(document.body);
+const allElements = document.querySelectorAll("*");
+const bgSize = document.querySelector(".bg-responsive-size");
+const debugButton = document.querySelector(".debug-toggle");
 debugButton.addEventListener("click", function() {DebugToggle()});
-var gridButton = document.querySelector("#gridButton");
+const gridButton = document.querySelector("#gridButton");
 gridButton.addEventListener("click", function() {GridToggle()});
 
-var slideBG = document.querySelector("#slideBG");
-var slideTitles = new Array();
-slideTitles = document.querySelectorAll(".slideTitle");
-var slideDescriptions = new Array();
-slideDescriptions = document.querySelectorAll(".slideDesc");
-var slideButtons = new Array();
-slideButtons = document.querySelectorAll(".slideButtons");
-var slideElements = new Array();
-slideElements = document.querySelectorAll("#slideBG, .slideTitle, .slideDesc, .slideButtons");
+const slideBG = document.querySelector("#slideBG");
+const slideTitles = document.querySelectorAll(".slideTitle");
+const slideDescriptions = document.querySelectorAll(".slideDesc");
+const slideButtons = document.querySelectorAll(".slideButtons");
+const slideElements = document.querySelectorAll("#slideBG, .slideTitle, .slideDesc, .slideButtons");
 
-var allColClasses = new Array();
+const allColClasses = new Array();
 
-var timerSwitch = bodyElement.getPropertyValue('--slideTimer')*1000;
-var loop = setInterval(function(){ChangeSlide();}, timerSwitch);
+let timerSwitch = bodyElement.getPropertyValue('--slideTimer')*1000;
+let loop = setInterval(function(){ChangeSlide();}, timerSwitch);
 
 PopulateColClasses();
 ColCreation();

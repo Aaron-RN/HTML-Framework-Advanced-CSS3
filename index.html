@@ -12,6 +12,7 @@
         <link rel = "icon" type = "image/png" href = "images/ms_logo_icon.png">
     </head>
     <body class="bg-responsive center">
+        <div id="navOverlay" class="hide"></div>
         <div class="bg-responsive-size hide"></div>
         <header>
             <h1 class="hide">Microsoft.com website built using custom Framework</h1>
@@ -19,10 +20,10 @@
                 <h2 class="hide">Navigation Menu</h2>
                 <div class="container center">
                     <div class="row">
-                        <div class="row-flex p-5 size-13 vert-btm vert-mid-md">
+                        <div class="row-flex p-5 size-13 vert-btm vert-mid-md pos-relative">
                             <div class="row-flex-auto show-sm-only-flex">
-                                <div class="col"><a href="#"><i class="fas fa-bars size-20"></i></a></div>
-                                <div class="col"><a href="#"><i class="fas fa-search size-20"></i></a></div>
+                                <div id="mobileNav" class="col px-1"><a href="#"><i class="fas fa-bars size-26"></i></a></div>
+                                <div class="col px-1"><a href="#"><i class="fas fa-search size-22"></i></a></div>
                             </div>
                             <div class="row-flex-auto hide-sm-flex p-10-child p-5-child-md">
                                 <div class="col"><a href="#"><img class="logo" src="images/Microsoft_logo.png" alt="Microsoft Logo"></a></div>
@@ -36,10 +37,25 @@
                             <div class="center-text show-sm-only col"><a href="#"><img class="logo" src="images/Microsoft_logo.png" alt="Microsoft Logo"></a></div>
                             <div class="row-flex-auto p-10-child margin-l-auto">
                                 <div class="col hide-sm"><a href="#"><span>All Microsoft</span> <i class="fas fa-chevron-down"></i></a></div>
-                                <div class="col hide-sm"><a href="#"><span class="hide-md-inline">Search</span> <i class="fas fa-search size-20 "></i></a></div>
-                                <div class="col"><a href="#"><span class="hide-md-inline">Cart</span> <i class="fas fa-shopping-cart size-20 p-l-5"></i></a></div>
-                                <div class="col hide-md"><a href="#"><span>Sign in</span></a></div>
-                                <div class="col p-0 p-b-3px"><a href="#"><i class="fas fa-user size-20 p-5 border border-circle"></i></a></div>
+                                <div class="col hide-sm"><a href="#"><span class="hide-md-inline">Search</span> <i class="fas fa-search size-22 "></i></a></div>
+                                <div class="col px-2-md"><a href="#"><span class="hide-md-inline">Cart</span> <i class="fas fa-shopping-cart size-22 p-l-5"></i></a></div>
+                                <div class="col hide-md px-2-md"><a href="#"><span>Sign in</span></a></div>
+                                <div class="col p-0 p-b-3px"><a href="#"><i class="fas fa-user size-22 p-5 border border-circle"></i></a></div>
+                            </div>
+                            <div id="navDropDownMenu" class="hide">
+                              <a href="#">Office</a>
+                              <a href="#">Windows</a>
+                              <a href="#">Surface</a>
+                              <a href="#">Xbox</a>
+                              <a href="#">Deals</a>
+                              <a href="#">Support</a>
+                              <a href="#">Software</a>
+                              <a href="#">PCs &amp; Devices</a>
+                              <a href="#">Entertainment</a>
+                              <a href="#">Business</a>
+                              <a href="#">Developer &amp; IT</a>
+                              <a href="#">Other</a>
+                              <a href="#">View Sitemap</a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +98,7 @@
                 </section>
                 <section>
                     <h2 class="hide">Latest Hottest Articles</h2>
-                    <div class="row p-x-2-md vert-top m-b-3">
+                    <div class="row px-2-md vert-top m-b-3">
                         <article class="col-3 col-6-md col-12-sm m-t-3 size-15">
                             <a href="#" class="p-0">
                                <figure>
@@ -126,12 +142,12 @@
                         </article>
                     </div>
                 </section>
-                <div class="row center-text m-b-2 p-x-2-md">
+                <div class="row center-text m-b-2 px-2-md">
                     <button id="gridButton" class="button size-18"><span class="animate-grow bold inline-block">Click Here!</span><br>To show 12-column Grid based framework examples</button>
                 </div>
                 <section id="grid-Examples" class="center-text hide">
                     <h2 class="hide">12-column Grid Based Framework layout examples</h2>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
@@ -145,7 +161,7 @@
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
@@ -153,13 +169,13 @@
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
@@ -167,63 +183,63 @@
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-4 height-50 border grid4 animate-grow-hover">4</div>
                         <div class="col-4 height-50 border grid4 animate-grow-hover">4</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-4 height-50 border grid4 animate-grow-hover">4</div>
                         <div class="col-4 height-50 border grid4 animate-grow-hover">4</div>
                         <div class="col-4 height-50 border grid4 animate-grow-hover">4</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                         <div class="col-5 height-50 border grid5 animate-grow-hover">5</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-5 height-50 border grid5 animate-grow-hover">5</div>
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-5 height-50 border grid5 animate-grow-hover">5</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                         <div class="col-6 height-50 border grid6 animate-grow-hover">6</div>
                     </div>
-                   <div class="row p-x-2-md m-b-3 p-15-child">
+                   <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-6 height-50 border grid6 animate-grow-hover">6</div>
                         <div class="col-6 height-50 border grid6 animate-grow-hover">6</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-5 height-50 border grid5 animate-grow-hover">5</div>
                         <div class="col-7 height-50 border grid7 animate-grow-hover">7</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-4 height-50 border grid4 animate-grow-hover">4</div>
                         <div class="col-8 height-50 border grid8 animate-grow-hover">8</div>
                     </div>
 
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-3 height-50 border grid3 animate-grow-hover">3</div>
                         <div class="col-9 height-50 border grid9 animate-grow-hover">9</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-2 height-50 border grid2 animate-grow-hover">2</div>
                         <div class="col-10 height-50 border grid10 animate-grow-hover">10</div>
                     </div>                    
 
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-1 height-50 border grid1 animate-grow-hover">1</div>
                         <div class="col-11 height-50 border grid11 animate-grow-hover">11</div>
                     </div>
-                    <div class="row p-x-2-md m-b-3 p-15-child">
+                    <div class="row px-2-md m-b-3 p-15-child">
                         <div class="col-12 height-50 border grid12 animate-grow-hover">12</div>
                     </div>
                 </section>
@@ -233,7 +249,7 @@
             <section>
             <h2 class="hide">Footer Links</h2>
             <div class="container p-t-3 p-b-3">
-                <div class="row p-x-2-md center vert-top">
+                <div class="row px-2-md center vert-top">
                     <section class="col-2-m4-12 m-b-2">
                         <h6 class="size-15">What's new</h6>
                         <ul>
@@ -313,6 +329,7 @@
             </section>
             <!--JavaScript Code-->
             <script src="js/slide.js"></script>
+            <script src="js/navMenu.js"></script>
         </footer>
     </body>
 </html>
