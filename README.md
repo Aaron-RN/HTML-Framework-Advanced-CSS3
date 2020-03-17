@@ -71,14 +71,14 @@ How to use:
 ```
 
 #### Add id [#]mobileNav to which ever element that will be used as a button to open up the mobile responsive navigation bar
-**In this example the id is placed on a div containing a bars icon provided by font-awesome**
+In this example the id is placed on a div containing a bars icon provided by font-awesome
 
 ```
 <div id="mobileNav" class="col px-1"><a href="#"><i class="fas fa-bars size-26"></i></a></div>
 ```
 
 #### Add div element container with id [#]navDropDownMenu and class .hide
-**The anchor links will be added as child elements within this created div**
+The anchor links will be added as child elements within this created div
 
 ```
 <div id="navDropDownMenu" class="hide">
