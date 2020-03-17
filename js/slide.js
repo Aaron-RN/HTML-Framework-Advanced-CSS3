@@ -89,7 +89,7 @@ function ChangeSlide()
             RemoveClass(slideElements[n],"animate-slideLeft")
         }
     }, (1 * 1000));
-    if(slideNum==1)
+    if(slideNum === 1)
         {
             slideBG.classList.remove("bg-slide-1");
             slideBG.classList.add("bg-slide-2");

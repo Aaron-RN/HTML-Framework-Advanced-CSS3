@@ -7,6 +7,10 @@
   --slideDesc-2: Null;
 }
 
+/* SLIDER */
+.bg-slide-1 { background-image: none; }
+.bg-slide-2 { background-image: none; }
+
 html { box-sizing: border-box; }
 
 *,

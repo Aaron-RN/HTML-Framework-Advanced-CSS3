@@ -87,6 +87,15 @@ This variable contains text which is shown as the description of the first slide
 #### --slideDesc-2
 This variable contains text which is shown as the description of the second slide.
 
+Slider background images are supplied using the classes 'bg-slide-1' and 'bg-slide-2'. ~Media responsive queries should be used to determine if alternate background images are given based on the screen size.~
+
+**Classes found in CSS file**
+```
+/* SLIDER */
+.bg-slide-1 { background-image: url(../images/slide1.webp); }
+.bg-slide-2 { background-image: url(../images/slide2.webp); }
+```
+
 **Example slider code in HTML :**
 
 ```
