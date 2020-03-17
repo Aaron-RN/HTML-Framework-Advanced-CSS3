@@ -60,9 +60,9 @@ __Example :__ `<div class="col-2-m3-12"></div>`
 
 ### Mobile Navigation Bar
 
-How to use:
+### How to use:
 
-#### Add a div within the body tag with id [#]navOverlay and class .hide
+#### Add a div within the body tag with id="#navOverlay" and class=".hide"
 
 ```
 <body>
@@ -70,15 +70,15 @@ How to use:
 </body>
 ```
 
-#### Add id [#]mobileNav to which ever element that will be used as a button to open up the mobile responsive navigation bar
-In this example the id is placed on a div containing a bars icon provided by font-awesome
+#### Add id="#mobileNav" to which ever element will be used as a button to open up the mobile responsive navigation bar
+In this example the id is placed on a div containing a bars icon provided by font-awesome.
 
 ```
 <div id="mobileNav" class="col px-1"><a href="#"><i class="fas fa-bars size-26"></i></a></div>
 ```
 
-#### Add div element container with id [#]navDropDownMenu and class .hide
-The anchor links will be added as child elements within this created div
+#### Add div element container with id="#navDropDownMenu" and class=".hide"
+The anchor links will be added as child elements within this created div.
 
 ```
 <div id="navDropDownMenu" class="hide">
@@ -87,6 +87,15 @@ The anchor links will be added as child elements within this created div
   <a href="#">Link 3</a>
   <a href="#">Link 4</a>
 </div>
+```
+#### *Note: 
+The navigationbar icon is automatically changed within NavMenu.js. If you wanted to choose a different icon you would have to edit lines 5 and 6.
+
+```
+...
+const navOpen = '<a href="#"><i class="fas fa-times size-34"></i></a>';
+const navClose = '<a href="#"><i class="fas fa-bars size-26"></i></a>';
+...
 ```
 
 ### Built-in Slider
@@ -118,7 +127,7 @@ This variable contains text which is shown as the description of the first slide
 #### --slideDesc-2
 This variable contains text which is shown as the description of the second slide.
 
-Slider background images are supplied using the classes 'bg-slide-1' and 'bg-slide-2'. ~Media responsive queries should be used to determine if alternate background images are given based on the screen size.~
+Slider background images are supplied using the classes 'bg-slide-1' and 'bg-slide-2'. *Media responsive queries should be used to determine if alternate background images are given based on the screen size.*
 
 **Classes found in CSS file**
 
