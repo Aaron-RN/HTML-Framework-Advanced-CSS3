@@ -58,6 +58,37 @@ The .col-\*-m\*-\* variant takes all three variables into one class-name as .col
 
 __Example :__ `<div class="col-2-m3-12"></div>`
 
+### Mobile Navigation Bar
+
+How to use:
+
+#### Add a div within the body tag with id [#]navOverlay and class .hide
+
+```
+<body>
+  <div id="navOverlay" class="hide"></div>
+</body>
+```
+
+#### Add id [#]mobileNav to which ever element that will be used as a button to open up the mobile responsive navigation bar
+**In this example the id is placed on a div containing a bars icon provided by font-awesome**
+
+```
+<div id="mobileNav" class="col px-1"><a href="#"><i class="fas fa-bars size-26"></i></a></div>
+```
+
+#### Add div element container with id [#]navDropDownMenu and class .hide
+**The anchor links will be added as child elements within this created div**
+
+```
+<div id="navDropDownMenu" class="hide">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+</div>
+```
+
 ### Built-in Slider
 At the moment the framework only allows for one working slider per page. The variables for the slider are changed and accessed by creating these custom CSS variables in your own custom CSS file: 
 
@@ -90,6 +121,7 @@ This variable contains text which is shown as the description of the second slid
 Slider background images are supplied using the classes 'bg-slide-1' and 'bg-slide-2'. ~Media responsive queries should be used to determine if alternate background images are given based on the screen size.~
 
 **Classes found in CSS file**
+
 ```
 /* SLIDER */
 .bg-slide-1 { background-image: url(../images/slide1.webp); }
