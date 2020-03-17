@@ -1,7 +1,7 @@
 # Advanced-CSS3
 In this final project, you’ll get to take everything you’ve learned and use it to build your own simple 12 column grid-based framework.
 
-I recreated the [__Microsoft.com__](https://www.microsoft.com/en-us/) website using a __Custom Built Framework__.
+I recreated the [__Microsoft.com__](https://www.microsoft.com/en-us/) website using the __Custom Built Framework__.
 
 ![Large Screens](images/screenshot1.png)
 ![Medium Screens](images/screenshot2.png)
