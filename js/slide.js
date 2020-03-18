@@ -54,14 +54,15 @@ function PopulateColClasses(){
 
 //Grabs all elements that contain the col-*-m*-* class and adds the value to the element's data-col attribute
 function ColCreation(){
-    for(var i = 0; i < allElements.length; i++){
-        var colStart = allElements[i].className.indexOf("col-");
-        var colEnd = allElements[i].className.indexOf(" ", colStart);
-        var str = allElements[i].className.slice(colStart, colEnd);
-        if(allColClasses.includes(str)){
-            allElements[i].setAttribute('data-col', str);
-        }
+  for (let i = 0; i < allElements.length; i += 1) {
+    const colStart = allElements[i].className.indexOf('col-');
+    let colEnd = allElements[i].className.indexOf(' ', colStart);
+    if (colEnd === -1) {colEnd = allElements[i].className.length;}
+    const str = allElements[i].className.slice(colStart, colEnd);
+    if (allColClasses.includes(str)) {
+      allElements[i].setAttribute('data-col', str);
     }
+  }
 }
 function DebugToggle()
 {
