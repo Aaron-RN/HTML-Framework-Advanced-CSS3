@@ -9,7 +9,8 @@
 a { text-decoration: none; color: black; padding: 2px; }
 nav a:hover span { border-bottom: 2px solid #000; }
 
-body { font-family: 'Roboto', sans-serif; line-height: 1.2; }
+body { font-family: 'Roboto', sans-serif; line-height: 1.2; overflow-x: hidden; }
+.hide-overflow-x { overflow-x: hidden; }
 
 /* NAVBAR ICONS */
 .fa-search { transform: rotateY(180deg); }
