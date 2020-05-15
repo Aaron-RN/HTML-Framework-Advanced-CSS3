@@ -366,7 +366,7 @@ __.vert-middle__ { top: 50%; transform: translateY(-50%); }
 
 👤 **Aaron Rory**
 
-- Github: [@Aaron-RN](https://github.com/Aaron-RN)
+- GitHub: [@Aaron-RN](https://github.com/Aaron-RN)
 - Twitter: [@ARNewbold](https://twitter.com/ARNewbold)
 - Linkedin: [Aaron Newbold](https://www.linkedin.com/in/aaron-newbold-1b9233187/)
 
