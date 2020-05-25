@@ -362,6 +362,10 @@ __.vert-btm, .vert-btm \*__ { vertical-align: bottom; align-self: flex-end; }
 __.vert-stretch, .vert-stretch \*__ { vertical-align: middle; align-self: stretch; height: 100%; }  
 __.vert-middle__ { top: 50%; transform: translateY(-50%); }
 
+### Future Features
+
+- Convert grid system to a flex-box based system
+
 ## Author
 
 👤 **Aaron Rory**
