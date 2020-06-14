@@ -1,5 +1,5 @@
 # Advanced-CSS3
-In this final project, you’ll get to take everything you’ve learned and use it to build your own simple 12 column grid-based framework.
+In this final project, I take everything I’ve learned and use it to build my own simple 12 column grid-based framework.
 
 I recreated the [__Microsoft.com__](https://www.microsoft.com/en-us/) website using the __Custom Built Framework__.
 
